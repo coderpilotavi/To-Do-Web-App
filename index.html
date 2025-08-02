@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata and document configuration -->
+    <meta charset="UTF-8" /> <!-- Sets character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Ensures compatibility with IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive design -->
+    
+    <title>To Do List</title> <!-- Page title shown in browser tab -->
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/icon.png">
+    
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Google Fonts setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Font Awesome Icons (⚠️ Check version availability) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    
+    <!-- Google Fonts for custom typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  
+  <body>
+    <!-- Header section (Date + Clock) -->
+    <div class="header-div">
+      
+      <!-- Left side: Title + Date -->
+      <div class="head-div">
+        <div class="my-day">
+          <h1>My Day</h1> <!-- Main heading -->
+        </div>
+        <div class="date" id="date"></div> <!-- Current date will be inserted dynamically -->
+      </div>
+      
+      <!-- Right side: Digital clock -->
+      <div class="clock">
+        <div class="flip" id="hours"><span>00</span></div>
+        <div class="flip" id="minutes"><span>00</span></div>
+        <div class="flip" id="seconds"><span>00</span></div>
+      </div>
+    </div>
+
+    <!-- Main content container -->
+    <div class="body-div">
+      
+      <!-- Input area for adding tasks -->
+      <div class="input-task-div">
+        <input type="text" id="taskInput" placeholder="Enter new task" /> <!-- Task input field -->
+        <button id="addTaskBtn">Add Task</button> <!-- Add task button -->
+      </div>
+
+      <!-- Section for New Tasks -->
+      <div class="new-task-head">
+        New Tasks
+        <!-- Example task (hidden template for cloning in JS) -->
+        <div class="new-tasks example-task">
+          <label class="checkbox-container">
+            <input type="checkbox" id="task-checkbox" checked> <!-- Checkbox -->
+            <span class="custom-checkbox"></span>
+          </label>
+          <p>Study Slot 1</p> <!-- Task text -->
+          <i class="fa-solid fa-trash" id="delete"></i> <!-- Delete icon -->
+          <i class="fa-solid fa-pen-to-square" id="edit"></i> <!-- Edit icon -->
+        </div>
+      </div>
+
+      <!-- Section for Completed Tasks -->
+      <div class="completed-task-head">
+        Completed Tasks
+        <!-- Example completed task (hidden template) -->
+        <div class="completed-tasks example-completed">
+          <label class="checkbox-container">
+            <input type="checkbox" id="task-checkbox" checked> <!-- Checkbox -->
+            <span class="custom-checkbox"></span>
+          </label>
+          <p>Study Slot 1</p> <!-- Completed task text -->
+          <i class="fa-solid fa-trash" id="comp-del"></i> <!-- Delete icon for completed task -->
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript file (handles date, clock, task logic) -->
+    <script src="app.js"></script>
+  </body>
+</html>
