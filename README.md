@@ -1,2 +1,21 @@
-# To-Do-Web-App
-A sleek and interactive To-Do List web app built with HTML, CSS, and JavaScript.Features a live clock,dynamic date display, and an intuitive task management system that allows users to add, edit, complete, and delete tasks. Tasks are visually organized into New Tasks and Completed Tasks sections, with smooth animations for a better user experience.
+# 📝 To-Do List App
+
+A simple and visually appealing To-Do List web application with:
+- 📅 Real-time date display
+- ⏱ Live digital clock
+- ✅ Add, edit, complete, and delete tasks
+
+## 🚀 Features
+- Add new tasks
+- Mark tasks as complete
+- Edit or delete existing tasks
+- Organized into *New Tasks* and *Completed Tasks*
+- Responsive design with modern UI
+
+## 🛠️ Tech Stack
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Font Awesome Icons**
+- **Google Fonts**
+
